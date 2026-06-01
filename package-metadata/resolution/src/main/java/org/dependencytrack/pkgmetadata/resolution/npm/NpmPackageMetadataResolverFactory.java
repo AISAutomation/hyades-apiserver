@@ -38,7 +38,7 @@ import static com.github.packageurl.PackageURLBuilder.aPackageURL;
 public final class NpmPackageMetadataResolverFactory implements PackageMetadataResolverFactory {
 
     private static final Duration FRESH_FOR = Duration.ofHours(12);
-    private static final long MAX_BYTES = 16L * 1024 * 1024;
+    private static final long MAX_BYTES = 32L * 1024 * 1024;
 
     private @Nullable ObjectMapper objectMapper;
     private @Nullable CachingHttpClient cachingHttpClient;
